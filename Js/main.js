@@ -42,3 +42,53 @@ for (let currentHealth = 10; currentHealth < 101; currentHealth += 10) {
     break
   }
 }
+
+fireballpower = 150
+
+
+for (let fireballpower = 150;fireballpower -= 150 * 0.20;) {
+    console.log(`Применение заклинания... Текущая сила: ${fireballpower}`)
+
+  if (fireballpower <= 100) {
+    console.log("Заклинание сбалансировано")
+    break
+  }
+}
+
+let strength = 10;
+const maxStrength = 25;
+
+for (;;) {
+  
+    const randomValue = Math.floor(Math.random() * 5) + 1;
+    strength += randomValue;
+    if (strength > maxStrength) {
+        strength = maxStrength;
+    }
+    
+    console.log(`Текущее значение силы: ${strength}`);
+    
+    if (strength === maxStrength) {
+        break; 
+    }
+}
+
+
+
+const sunduki = [12, 5, 8, 15, 3, 10];
+
+let arr = 0;
+
+for (let i = 0; i < sunduki.length; i++) {
+  arr = arr + sunduki[i];
+}
+
+console.log(arr); 
+
+
+
+const lovushki = [0, 0, 0, 0, 0, 0]; 
+for (let i = 1; i < lovushki.length; i += 2) {
+  lovushki[i] = "ловуша"; }
+
+console.log(lovushki);
